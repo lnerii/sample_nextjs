@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run export
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
+  base-directory: ${CODEBUILD_SRC_DIR}/out
