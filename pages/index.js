@@ -22,7 +22,7 @@ export default function IndexPage({ postList }) {
         <title>Home page</title>
       </Head>
 
-      <h1>List of posts v2</h1>
+      <h1>List of posts Demo Jenkins with CodeBuild</h1>
 
       <section>
         {postList.map((post) => (
